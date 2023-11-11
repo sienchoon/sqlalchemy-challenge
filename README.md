@@ -7,41 +7,40 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 
 ### Part 1: Analyse and Explore the Climate Data
 #### Precipitation Analysis
-1.       Find the most recent date in the dataset.
+1.    Find the most recent date in the dataset.
 
-2.       Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
+2.    Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
 
-3.       Select only the "date" and "prcp" values.
+3.    Select only the "date" and "prcp" values.
 
-4.       Load the query results into a Pandas DataFrame. Explicitly set the column names.
+4.    Load the query results into a Pandas DataFrame. Explicitly set the column names.
 
-5.       Sort the DataFrame values by "date".
+5.    Sort the DataFrame values by "date".
 
-6.       Plot the results by using the DataFrame plot method.
+6.    Plot the results by using the DataFrame plot method.
 
-7.       Use Pandas to print the summary statistics for the precipitation data
+7.    Use Pandas to print the summary statistics for the precipitation data
 
 ### Part 2: Design Your Climate App
 
 Now that you’ve completed your initial analysis, you’ll design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
 
-1.      Start at the homepage.
-2.          List all the available routes: 
+1.   Start at the homepage.
+2.   List all the available routes: <br/>
     `/api/v1.0/precipitation` <br/>
     `/api/v1.0/stations` <br/>
     `/api/v1.0/tobs` <br/>
     `api/v1.0/<start>` <br/>
     `api/v1.0/<start>/<end>`
-3.      Convert the query results to a dictionary by using date as the key and prcp as the value.
-4.      Return the JSON representation of the dictionary
-5.      Repeat the same for each route.
-6.      /api/v1.0/<start> and /api/v1.0/<start>/<end> 
-            
-        Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
+3.   Convert the query results to a dictionary by using date as the key and prcp as the value.
+4.   Return the JSON representation of the dictionary
+5.   Repeat the same for each route.
+6.   `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>` <br/>
+Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
 
-        For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
+7.  For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
 
-        For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
+8.  For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
 <br/>
 
 ## 🧰 Languages and Tools
@@ -73,8 +72,11 @@ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-w
 ## ✅ Getting Started 
 ### Installation
 Get up and running with the following command: <br/>
-`pip install sqlalchemy` <br/>
-`pip install flask` <br/>
+<br/> Install SQLAlchemy
+1.      pip install sqlalchemy
+Install Flask <br/>
+
+2.      pip install flask
 
 
 # 📃 Documentation
