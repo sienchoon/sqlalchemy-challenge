@@ -82,4 +82,6 @@ Install Flask <br/>
 # 📃 Documentation
 The latest documentation is available at: <br/><br/>
 https://www.sqlalchemy.org/docs/
+https://flask.palletsprojects.com/en/3.0.x/installation/#virtual-environments
+
 
