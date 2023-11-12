@@ -71,15 +71,16 @@ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-w
 
 ## ✅ Getting Started 
 ### 🛠️ Installation
-Get up and running with the following command: <br/>
+Get up and running with the following command in Bash terminal: <br/>
 * Install SQLAlchemy
-1.      pip install sqlalchemy
+1.      $pip install sqlalchemy
 * Install Flask
 
-2.      pip install flask
+2.      $pip install flask
+* Run climate_app.py 
+3.      $python climate_app.py
 
-
-### ➡️ Run Workflows
+### ➡️ Run Workflows 
 Here is a code snippet that is used to handle the conversion of user-provided date strings into `datetime.date` objects.
 This helps for a better user experience, providing formatted date strings to access the database. 
 
