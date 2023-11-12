@@ -5,8 +5,8 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 There are two parts to this challenge:
 In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib
 
-### Part 1: Analyse and Explore the Climate Data
-#### Precipitation Analysis
+## Part 1: Analyse and Explore the Climate Data
+### Precipitation Analysis
 1.    Find the most recent date in the dataset.
 
 2.    Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
@@ -70,15 +70,32 @@ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-w
 <br /><br /><br /><br />
 
 ## ✅ Getting Started 
-### Installation
+### 🛠️ Installation
 Get up and running with the following command: <br/>
-<br/> Install SQLAlchemy
+* Install SQLAlchemy
 1.      pip install sqlalchemy
-Install Flask <br/>
+* Install Flask
 
 2.      pip install flask
 
 
+### ➡️ Run Workflows
+Here is a code snippet that is used to handle the conversion of user-provided date strings into `datetime.date` objects.
+This helps for a better user experience, providing formatted date strings to access the database. 
+
+    try:
+
+        start = dt.datetime.strptime(start,"%Y-%m-%d").date()
+        
+        end = dt.datetime.strptime(end, "%Y-%m-%d").date()
+
+    except ValueError:
+
+        return jsonify({"error": "Invalid date format. Use YYYY-MM-DD."}), 400
+
+
+
+<br/>
 # 📃 Documentation
 The latest documentation is available at: <br/><br/>
 https://www.sqlalchemy.org/docs/
