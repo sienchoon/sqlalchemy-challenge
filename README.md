@@ -71,7 +71,7 @@ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-w
 
 ## ✅ Getting Started 
 ### 🛠️ Installation
-Get up and running with the following command in Bash terminal: <br/>
+Open VSCode and run the following command in Git Bash terminal: <br/>
 * Install SQLAlchemy
 1.      $pip install sqlalchemy
 * Install Flask
